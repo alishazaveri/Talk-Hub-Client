@@ -1,0 +1,124 @@
+.container {
+  display: grid;
+  background-color: #080420;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.container .buttonContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+
+.container .buttonContainer .emoji {
+  position: relative;
+}
+
+.buttonContainer .emoji svg {
+  font-size: 1.4rem;
+  color: black;
+  background-color: yellow;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+
+
+
+.container .inputContainer {
+  width: 100%;
+  border-radius: 2rem;
+  display: flex;
+  align-content: center;
+  gap: 2rem;
+  background-color: #ffffff34;
+
+
+}
+
+.inputContainer input {
+  width: 90%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+
+
+  &::selection {
+    background-color: #9a86f3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.inputContainer button {
+  padding: .3rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9a86f3;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.inputContainer button svg {
+  font-size: 2rem;
+  color: white;
+}
+
+
+@media (max-width:1080px) {
+  .inputContainer button {
+    padding: .3rem 1rem;
+  }
+
+  .inputContainer input {
+    font-size: .9rem;
+
+  }
+
+  .inputContainer button svg {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+}
+
+@media (max-width:400px) {
+  .inputContainer button {
+    padding: .2rem .7rem;
+  }
+
+  .container .inputContainer {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .inputContainer input {
+    font-size: .8rem;
+    padding-left: .5rem;
+
+  }
+
+  .inputContainer button svg {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 .9rem;
+    gap: .9rem;
+  }
+}

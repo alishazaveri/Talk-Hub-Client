@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container img {
+    height: 20rem;
+}
+
+.container span {
+    color: #4e00ff;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .container img {
+        height: 10rem;
+    }
+
+    .container span {
+        font-size: 1.1rem;
+    }
+
+    .container h1 {
+        font-size: 1.4rem;
+    }
+
+    .container h3 {
+        font-size: 1rem;
+
+    }
+
+}

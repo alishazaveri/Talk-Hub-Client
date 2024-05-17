@@ -1,0 +1,197 @@
+.Container {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  background-color: #080420;
+  overflow: hidden;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  background-color: #080420;
+  overflow: hidden;
+}
+
+.Container .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Container .brand img {
+  height: 2rem;
+}
+
+.Container .brand h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 0.8rem;
+
+
+}
+
+.contacts::-webkit-scrollbar {
+  width: .2rem;
+
+
+}
+
+.contacts::-webkit-scrollbar-thumb {
+  background-color: #ffffff39;
+  width: .1rem;
+  border-radius: 1rem;
+}
+
+
+.contacts .contact {
+  background-color: #ffffff39;
+  min-height: 5rem;
+  width: 90%;
+  cursor: pointer;
+  border-radius: .2rem;
+  padding: .4rem;
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+  transition: 0.3s ease-in-out;
+}
+
+.contacts .contact .avatar img {
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.contacts .contact .username h3 {
+  color: white;
+}
+
+.contacts .selected {
+  background-color: #9186f3;
+}
+
+
+.currentUser {
+  background-color: #0d0d30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.currentUser .avatar img {
+  height: 4rem;
+  max-inline-size: 100%;
+  border-radius: 50%;
+
+}
+
+.currentUser .username h2 {
+  color: white;
+}
+
+@media (max-width:1080px) {
+  .currentUser {
+    gap: .5rem;
+  }
+
+  .currentUser .username h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:700px) {
+
+  .contacts .contact {
+    min-height: 4rem;
+    gap: .5rem;
+    overflow: hidden;
+
+  }
+
+  .contacts .contact .avatar img {
+    height: 2rem;
+  }
+
+  .contacts .contact .username {
+    overflow-wrap: break-word;
+    max-width: 50%;
+
+  }
+
+  .contacts .contact .username h3 {
+    font-size: 1.12rem;
+  }
+
+  .currentUser .username h2 {
+    font-size: 1rem;
+  }
+
+  .currentUser .avatar img {
+    height: 3rem;
+  }
+}
+
+@media (max-width:400px) {
+
+  .contacts .contact {
+    min-height: 4rem;
+    gap: .5rem;
+    overflow: hidden;
+
+  }
+
+  .contacts .contact .avatar img {
+    height: 2rem;
+  }
+
+  .contacts .contact .username {
+    overflow-wrap: break-word;
+    max-width: 50%;
+
+  }
+
+  .contacts .contact .username h3 {
+    font-size: 1.12rem;
+  }
+
+  .currentUser {
+    gap: .1rem;
+    padding: 1rem;
+    justify-content: flex-start;
+
+  }
+
+  .currentUser .username {
+    overflow-wrap: break-word;
+    max-width: 40%;
+  }
+
+  .currentUser .username h2 {
+    font-size: .8rem;
+  }
+
+  .currentUser .avatar img {
+    height: 1.5rem;
+  }
+
+  .Container .brand {
+    gap: .2rem;
+  }
+
+  .Container .brand img {
+    height: 1.5rem;
+  }
+
+  .Container .brand h3 {
+    color: white;
+    font-size: 1rem;
+  }
+}
